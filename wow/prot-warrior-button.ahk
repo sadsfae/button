@@ -2,6 +2,7 @@
 #MaxThreadsPerHotkey 4
 Process,priority,,High 
 #IfWinActive
+;;; button between "$" and "::" starts loop
 $Mbutton::
 if KeepWinZRunning1
 {
@@ -66,6 +67,7 @@ f_Loop:
     settimer, f_Loop, -100
 return
 
+;;; character between "$" and "::" stops the loop
 $`::
 if KeepWinZRunning2
 {
