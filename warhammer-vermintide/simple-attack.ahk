@@ -12,15 +12,16 @@ if KeepWinZRunning1
 KeepWinZRunning1=1
     settimer, f_Loop, -100
     return
+;;; for now just spam the attack button when loop is toggled
 f_Loop:
-  send LButton,LButton
+  send {Click},{Click}
     Sleep 500
   if KeepWinZRunning1
     settimer, f_Loop, -100
 return
 
 ;;; character between "$" and "::" stops the loop
-$`::
+$XButton2::
 if KeepWinZRunning2
 {
     KeepWinZRunning2=0
