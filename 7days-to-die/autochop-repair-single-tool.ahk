@@ -6,7 +6,7 @@
 #MaxThreadsPerHotkey 4
 Process,priority,,High 
 #IfWinActive
-
+;; middle mouse button starts
 $Mbutton::
 if auto_attack
 {
@@ -14,6 +14,7 @@ if auto_attack
     SetNumlockState, off
     return
 }
+;; swing item 1 100 times
 auto_attack=1
     settimer, f_Loop, -100
     SetNumlockState, on
@@ -25,7 +26,7 @@ Loop 100 {
   send {click},{click}
     Sleep 500
 }
-
+;; auto repair item 1 after 100 swings
   send `t
     Sleep 500
   MouseMove, 680,1145
@@ -37,12 +38,13 @@ Loop 100 {
     Sleep 500
   send `t
     Sleep 500
+;; inch forward slightly
   send +,w+,w
     Sleep 500
 if auto_attack
     settimer, f_Loop, -100
 return
-
+;; mouse side button 1 stops things
 $Xbutton1::
 if kill_check
 {
@@ -52,7 +54,6 @@ if kill_check
     SetCapsLockState, off
     return
 }
-;Make the parsing loop no
 Critical
 
 kill_everything=1
