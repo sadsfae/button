@@ -5,12 +5,12 @@
 ;; 88   88 88b  d88    88    `8b  d8' Y8b  d8 88   88 `8b  d8' 88      
 ;; YP   YP ~Y8888P'    YP     `Y88P'   `Y88P' YP   YP  `Y88P'  88      
 ;;                                                                     
+;; ----- What does it do? -----
 ;; utilize any primary mining/chopping item in slot 1
 ;; continually chop/hack/mine, etc.
 ;; auto repair the item after 100 swipes.
-;; leave inventory full
+;; note: leave inventory full when in use
 ;; credit: @aa-thomas 
-;; 
 #NoEnv
 #MaxThreadsPerHotkey 4
 Process,priority,,High 
