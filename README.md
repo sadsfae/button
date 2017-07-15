@@ -1,9 +1,8 @@
 # button
-Autohotkey code for various online games.
-Autohotkey is a Windows framework for automating button and UI activities.
+* Autohotkey code for various online games.
+* Autohotkey is a Windows framework for automating button and UI activities.
 
-It is useful for some online games because carpal tunnel sucks.
-This code is written in a mostly C# loop syntax.
+Carpal tunnel sucks.
 
 You will need AutoHotKey framework installed:
 
